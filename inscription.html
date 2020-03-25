@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="connexion.css"media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+        <title>Inscription</title>
+    </head>
+    <body class="wrapper">      
+        <header>
+        </header>
+        <main>
+            <div class="formulaire">
+                <div class="btitre"><h1>Créez votre compte<span>Apprenez le japonais avec Nihon no Kihon </span></h1></div>
+                <form action="connexion.html">
+                    <div class="section"><span>1</span>Informations personnelles</div>
+                    <div class="form-back">
+                        <div><label>Nom complet<span> *</span></label></div>
+                        <div class="ligne">
+                            <input type="text" name="field1" class="field-divided" placeholder="Prénom" required autocomplete="on" autofocus/>
+                            <input type="text" name="field2" class="field-divided" placeholder="Nom" required autocomplete="on"/>
+                        </div>
+                        <div class="label-position"><label>Vous êtes<span> *</span></label></div>
+                        <div class="input-position">
+                            <input type="radio" id="male" name="gender" value="male" required autocomplete="on">
+                            <label for="male">Un homme</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Une femme</label>
+                        </div>
+                        <div class="label-position">
+                            <label for="datemax">Date de naissance<span> *</span></label>
+                            <input type="date" class="birthday" id="datemax" name="datemax" max="2002-01-01" name="datemin" min="1910-01-01" required autocomplete="on">
+                        </div>
+                        <div class="label-position"><label for="diplome">Sélectionnez votre niveau d'étude<span> *</span></label></div>
+                        <div class="ligne">
+                            <select id="diplome" name="diplomelist" form="diplomeform" required>
+                                <option value="brevet">Brevet</option>
+                                <option value="CAP">CAP</option>
+                                <option value="BAC">BAC</option>
+                                <option value="BAC+2">BAC+2</option>
+                                <option value="BAC+3">BAC+3</option>
+                                <option value="BAC+4">BAC+4</option>
+                                <option value="BAC+5">BAC+5</option>
+                                <option value="Doctorat">Doctorat</option>
+                                <option value="Autre">Autre</option><br/>
+                                <input type="text" placeholder="Autre précisez">
+                            </select>
+                        </div>
+                        <div class="label-position"><label>Dans quel but souhaitez-vous rejoindre notre école en ligne ?<span> *</span></label>
+                        </div>         
+                        <div class="input-position">
+                            <input type="checkbox" id="reason1" name="reason1" value="job" required autocomplete="on">
+                            <label for="reason1"> Pour des raisons professionnelles</label><br>
+                            <input type="checkbox" id="reason2" name="reason2" value="school">
+                            <label for="reason2"> Pour des raisons scolaires</label><br>
+                            <input type="checkbox" id="reason3" name="reason3" value="privacy">
+                            <label for="reason3"> Pour des raisons personnelles</label><br>
+                            <input type="checkbox" id="reason4" name="reason4" value="other">
+                            <label for="reason3"> Autre</label>
+                            <input class="input-position" type="text" placeholder="Autre précisez">
+                        </div>       
+                    </div>
+                    <div class="section"><span>2</span>Personnalisation compte</div>
+                    <div class="form-back">
+                        <div>
+                            <label for="myfile">Selectionnez une photo de profil</label><br>
+                            <input type="file" id="myfile" name="myfile">
+                        </div>
+                        <div class="label-position">
+                            <label for="favcolor">Sélectionnez la couleur de votre thème </label>
+                            <input type="color" id="favcolor" name="favcolor">
+                        </div>
+                        <div class="label-position">
+                            <label for="quantity">Nombre d'utilisateur(s) sur ce compte<span> *</span></label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5" required autocomplete="on">
+                        </div>
+                        <div class="label-position">
+                            <div><label>Quels sont vos hobbies ?</label></div>
+                            <div class="input-position">
+                                <input type="checkbox" id="hobby1" name="hobby1" value="sport" autocomplete="on">
+                                <label for="hobby1">Sport</label><br>
+                                <input type="checkbox" id="hobby2" name="hobby2" value="cinema">
+                                <label for="hobby2">Cinéma</label><br>
+                                <input type="checkbox" id="hobby3" name="hobby3" value="cooking">
+                                <label for="hobby3">Cuisine</label><br>
+                                <input type="checkbox" id="hobby4" name="hobby4" value="reading">
+                                <label for="hobby4">Lecture</label><br>
+                                <input type="checkbox" id="hobby5" name="hobby5" value="other">
+                                <label for="hobby5"> Autre</label><br/>
+                                <input class="input-position" type="text" placeholder="Autre précisez">
+                            </div>
+                        </div>
+                        <div class="label-position">
+                            <label for="textarea">Présentez vous en quelques lignes :</label>
+                            <textarea id="introduction" name="introduction" class="field-style" placeholder="Message" autocomplete="on"></textarea>
+                        </div> 
+                    </div>
+                    <div class="section"><span>3</span>Adresse & Coordonnées</div>
+                    <div class="form-back">
+                        <div>
+                            <label>Adresse postale<textarea name="field3" class="field-style" autocomplete="on"></textarea></label>
+                        </div>
+                        <div class="label-position">
+                            <label>Numéro de téléphone<input type="text" name="phone" autocomplete="on"/></label>      
+                        </div>
+                        <div class="label-position">
+                            <label>Adresse mail <span> *</span><input type="email" name="email" required autocomplete="on" /></label>
+                        </div>
+                    </div>
+                    <div class="section"><span>4</span>Identifiant & Mot de passe</div>
+                    <div class="form-back">
+                        <div>
+                            <label for="username">Identifiant<span> *</span></label>
+                            <input type="text" id="username" name="username" required autocomplete="on">
+                        </div>
+                        <div class="label-position">
+                            <label for="pwd">Mot de passe<span> *</span></label>
+                            <input type="password" name="password" minlength="8" required autocomplete="off">
+                        </div>
+                        <div class="label-position">
+                            <label>Confirmez votre mot de passe<span> *</span><input minlength="8" type="password" name="password-confirm" required autocomplete="off"/></label>
+                        </div>
+                    </div>
+                    <div class="button-section">
+                        <span class="privacy-policy">
+                            <input type="checkbox" name="field8" required><a href="connexion.html">Cochez cette case pour accepter nos conditions générales et notre politique.<span>*</span></a>  
+                        </span>
+                        <input type="submit" name="Sign Up" id="valider" />
+                        <p><span>*</span> Champs obligatoires</p>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+        </footer>    
+    </body>
+</html>
