@@ -29,7 +29,7 @@
                         </div>
                         <div class="label-position">
                             <label for="datemax">Date de naissance<span> *</span></label>
-                            <input type="date" class="birthday" id="datemax" name="datemax" max="2002-01-01" name="datemin" min="1910-01-01" required autocomplete="on">
+                            <input type="date" class="birthday" id="datemax" name="datemax-min" max="2002-01-01" min="1910-01-01" required autocomplete="on">
                         </div>
                         <div class="label-position"><label for="diplome">Sélectionnez votre niveau d'étude<span> *</span></label></div>
                         <div class="ligne">
@@ -56,7 +56,7 @@
                             <input type="checkbox" id="reason3" name="reason3" value="privacy">
                             <label for="reason3"> Pour des raisons personnelles</label><br>
                             <input type="checkbox" id="reason4" name="reason4" value="other">
-                            <label for="reason3"> Autre</label>
+                            <label for="reason4"> Autre</label>
                             <input class="input-position" type="text" placeholder="Autre précisez">
                         </div>       
                     </div>
@@ -91,7 +91,7 @@
                             </div>
                         </div>
                         <div class="label-position">
-                            <label for="textarea">Présentez vous en quelques lignes :</label>
+                            <label for="introduction">Présentez vous en quelques lignes :</label>
                             <textarea id="introduction" name="introduction" class="field-style" placeholder="Message" autocomplete="on"></textarea>
                         </div> 
                     </div>
@@ -114,8 +114,8 @@
                             <input type="text" id="username" name="username" required autocomplete="on">
                         </div>
                         <div class="label-position">
-                            <label for="pwd">Mot de passe<span> *</span></label>
-                            <input type="password" name="password" minlength="8" required autocomplete="off">
+                            <label for="password">Mot de passe<span> *</span></label>
+                            <input type="password" name="password" id="password" minlength="8" required autocomplete="off">
                         </div>
                         <div class="label-position">
                             <label>Confirmez votre mot de passe<span> *</span><input minlength="8" type="password" name="password-confirm" required autocomplete="off"/></label>
